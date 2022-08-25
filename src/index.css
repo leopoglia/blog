@@ -6,28 +6,29 @@ body {
   overflow-x: hidden;
 }
 
-*{
+* {
   transition: 0.1s;
 }
 
-:root{
+:root {
   --p: #1a202c;
   --s: #e2e8f0;
-  --t: #ffffff;
+  --t: #eeeeeeee;
+  --q: #757575;
 }
 
 *::-webkit-scrollbar {
-  width: 5px;  
-  height: 5px;             
+  width: 5px;
+  height: 5px;
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--s);       
+  background: var(--s);
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--p);   
-  border-radius: 10px;       
+  background-color: var(--p);
+  border-radius: 10px;
 }
 
 a {
@@ -70,7 +71,8 @@ header label {
   align-items: center;
 }
 
-header label {
+header label,
+.post .titulo {
   cursor: pointer;
   font-family: Inter var, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   font-weight: 800;
@@ -86,8 +88,76 @@ header .blog {
   cursor: pointer;
 }
 
-main p{
+main p {
   text-align: justify;
+}
+
+.post{
+  display: flex;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.post:hover{
+  background-color: var(--t);
+}
+
+.post .texto{
+  margin-right: 25px;
+}
+
+.post .perfil {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.post .perfil img {
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  margin-right: 5px;
+}
+
+
+.post .titulo {
+  font-size: 20px !important;
+}
+
+.post .descricao {
+  color: var(--q);
+}
+
+.post .informacoes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--q);
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.post .informacoes div{
+  display: flex;
+}
+
+.post .informacoes .data{
+  margin-right: 15px;
+}
+
+.post .acoes ion-icon{
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.post .post-imagem{
+  width: 200px;
+  height: 134px;
+  border-radius: 5px;
 }
 
 hr {
@@ -129,13 +199,13 @@ footer .linkedin:hover {
   color: rgb(2, 117, 180);
 }
 
-@media(max-width: 850px){
-  footer{
+@media(max-width: 850px) {
+  footer {
     display: grid;
     justify-content: center;
   }
 
-  footer p{
+  footer p {
     margin-bottom: 10px;
   }
 }

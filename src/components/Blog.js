@@ -2,6 +2,8 @@ import '../index.css';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
+import Post from './Post';
+
 
 export default function App() {
     return (
@@ -9,7 +11,12 @@ export default function App() {
 
             <Header titulo="Blog" link="Inicio"></Header>
 
-            <Main></Main>
+            <Post></Post>
+            <Post></Post>
+            <Post></Post>
+            <Post></Post>
+
+
             <hr></hr>
 
             <Footer></Footer>
