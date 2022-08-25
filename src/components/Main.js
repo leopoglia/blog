@@ -1,9 +1,9 @@
 import '../index.css';
 
-export default function Main() {
+export default function Main(props) {
     return (
         <main>
-            <p className='about'>Olá, sou Aprendiz de Desenvolvedor de Sistemas no Centro WEG. Gosto de trabalhar com Javascript e criar belos aplicativos de back-end.</p>
+            <p className='about'>{props.texto}</p>
         </main>
     );
 }

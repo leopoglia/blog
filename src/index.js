@@ -10,6 +10,7 @@ import './index.css';
 import App from './components/App';
 import Blog from './components/Blog'
 import reportWebVitals from './reportWebVitals';
+import Post from './components/Post';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +18,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/blog" element={<Blog />} />
+      <Route path="/post" element={<Post />} />
     </Routes>
   </BrowserRouter>
 );

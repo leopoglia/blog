@@ -10,7 +10,7 @@ export default function App() {
 
       <Header titulo="Seu nome" link="Blog"></Header>
 
-      <Main></Main>
+      <Main texto="Olá, sou Aprendiz de Desenvolvedor de Sistemas no Centro WEG. Gosto de trabalhar com Javascript e criar belos aplicativos de back-end."></Main>
 
       <hr></hr>
 
