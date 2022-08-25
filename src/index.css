@@ -3,6 +3,11 @@ body {
   font-family: -apple-system, sans-serif;
   width: 100%;
   letter-spacing: -.02em;
+  overflow-x: hidden;
+}
+
+*{
+  transition: 0.1s;
 }
 
 :root{
@@ -11,9 +16,23 @@ body {
   --t: #ffffff;
 }
 
+*::-webkit-scrollbar {
+  width: 5px;  
+  height: 5px;             
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--s);       
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--p);   
+  border-radius: 10px;       
+}
+
 a {
   text-decoration: none;
-  color: #1a202c;
+  color: var(--p);
 }
 
 #root {
@@ -32,8 +51,8 @@ code {
 
 .App,
 .Blog {
-  color: #1a202c;
-  margin-top: 80px;
+  color: var(--p);
+  margin: 80px 0;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -67,10 +86,14 @@ header .blog {
   cursor: pointer;
 }
 
+main p{
+  text-align: justify;
+}
+
 hr {
   margin: 2em 0;
-  border: 0 solid #e2e8f0;
-  border-color: #e2e8f0;
+  border: 0 solid var(--s);
+  border-color: var(--s);
   border-top-width: 1px;
 }
 
@@ -104,4 +127,15 @@ footer .instagram:hover {
 
 footer .linkedin:hover {
   color: rgb(2, 117, 180);
+}
+
+@media(max-width: 850px){
+  footer{
+    display: grid;
+    justify-content: center;
+  }
+
+  footer p{
+    margin-bottom: 10px;
+  }
 }

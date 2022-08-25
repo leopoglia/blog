@@ -1,6 +1,7 @@
 import '../index.css';
-import Footer from './Footer';
 import Header from './Header';
+import Main from './Main';
+import Footer from './Footer';
 
 
 export default function App() {
@@ -9,7 +10,8 @@ export default function App() {
 
       <Header titulo="Seu nome" link="Blog"></Header>
 
-      <p className='about'>Olá, sou Aprendiz de Desenvolvedor de Sistemas no Centro WEG. Gosto de trabalhar com Javascript e criar belos aplicativos de back-end.</p>
+      <Main></Main>
+
       <hr></hr>
 
       <Footer></Footer>

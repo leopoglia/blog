@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 export default function Header(props) {
     let link;
 
-    if(props.link == "Blog"){
+    if (props.link === "Blog") {
         link = "/blog"
-    }else if(props.link == "Inicio"){
+    } else if (props.link === "Inicio") {
         link = "/"
     }
 
@@ -19,9 +19,6 @@ export default function Header(props) {
             </label>
 
             <Link to={link}><p className='blog'>{props.link}</p></Link>
-
-
-
         </header>
     );
 }
