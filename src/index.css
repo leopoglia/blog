@@ -162,6 +162,14 @@ main p {
   font-size: 18px;
 }
 
+.post .acoes ion-icon:nth-child(1):hover{
+  color: #e11e0e !important;
+}
+
+.post .acoes ion-icon:nth-child(2):hover{
+  color: #cf872e !important;
+}
+
 .post .post-imagem {
   width: 200px;
   height: 134px;

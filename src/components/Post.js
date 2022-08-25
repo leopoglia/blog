@@ -6,8 +6,8 @@ export default function Post() {
 
             <div className='texto'>
                 <div className='perfil'>
-                    <img src='https://miro.medium.com/fit/c/20/20/1*yPhYY-wHnLlVOuNqft-hUw.jpeg' />
-                    <p>Leonardo</p>
+                    <img src='https://avatars.githubusercontent.com/u/92129999?s=400&u=ecc83001b367e254f6e8812dbb4f65cb6f5bcf4d&v=4' />
+                    <p>leocpx</p>
                 </div>
 
                 <div className='titulo'>Por que Dall-E não vai roubar meu emprego</div>
@@ -23,8 +23,8 @@ export default function Post() {
                     </div>
 
                     <div className='acoes'>
-                        <ion-icon name="heart-outline"></ion-icon>
-                        <ion-icon name="bookmark-outline"></ion-icon>
+                        <ion-icon className='coracao' name="heart-outline"></ion-icon>
+                        <ion-icon className='salvo' name="bookmark-outline"></ion-icon>
                     </div>
                 </div>
             </div>
