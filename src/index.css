@@ -54,7 +54,7 @@ code {
 .Blog {
   color: var(--p);
   margin: 80px 0;
-  width: 50%;
+  width: 55%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -92,20 +92,21 @@ main p {
   text-align: justify;
 }
 
-.post{
+.post {
   display: flex;
+  justify-content: space-between;
   padding: 15px;
   border-radius: 10px;
   cursor: pointer;
   margin-bottom: 10px;
 }
 
-.post:hover{
+.post:hover {
   background-color: var(--t);
 }
 
-.post .texto{
-  margin-right: 25px;
+.post .texto {
+  width: 68%;
 }
 
 .post .perfil {
@@ -124,10 +125,18 @@ main p {
 
 
 .post .titulo {
+  width: 95%;
   font-size: 20px !important;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: ltr;
 }
 
 .post .descricao {
+  height: 55px;
+  overflow: hidden;
   color: var(--q);
 }
 
@@ -137,24 +146,23 @@ main p {
   justify-content: space-between;
   color: var(--q);
   font-size: 15px;
-  margin-top: 15px;
 }
 
-.post .informacoes div{
+.post .informacoes div {
   display: flex;
 }
 
-.post .informacoes .data{
+.post .informacoes .data {
   margin-right: 15px;
 }
 
-.post .acoes ion-icon{
+.post .acoes ion-icon {
   margin-left: 10px;
   cursor: pointer;
   font-size: 18px;
 }
 
-.post .post-imagem{
+.post .post-imagem {
   width: 200px;
   height: 134px;
   border-radius: 5px;
@@ -199,7 +207,36 @@ footer .linkedin:hover {
   color: rgb(2, 117, 180);
 }
 
+@media(max-width: 1200px) {
+  .post .texto {
+    width: 60%;
+  }
+}
+
+@media(max-width: 1000px) {
+  .post .texto {
+    width: 50%;
+  }
+}
+
 @media(max-width: 850px) {
+
+  .post {
+    display: grid;
+  }
+
+  .post .texto {
+    width: 100%;
+    overflow-x: hidden;
+    margin-right: -15px;
+  }
+
+  .post .post-imagem {
+    width: 100%;
+    margin-top: 15px;
+    height: auto;
+  }
+
   footer {
     display: grid;
     justify-content: center;
@@ -207,5 +244,10 @@ footer .linkedin:hover {
 
   footer p {
     margin-bottom: 10px;
+  }
+
+  .App,
+  .Blog {
+    width: 65% !important;
   }
 }

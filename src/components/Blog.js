@@ -17,6 +17,7 @@ export default function App() {
             <Post></Post>
 
 
+
             <hr></hr>
 
             <Footer></Footer>
