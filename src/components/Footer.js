@@ -5,22 +5,22 @@ export default function Footer() {
         <footer>
             <p className="twitter">
                 <ion-icon name="logo-twitter"></ion-icon>
-                @seunome
+                @leopoglia
             </p>
 
             <p className="github">
                 <ion-icon name="logo-github"></ion-icon>
-                @seunome
+                @leopoglia
             </p>
 
             <p className="instagram">
                 <ion-icon name="logo-instagram"></ion-icon>
-                @seunome
+                @leopoglia
             </p>
 
             <p className="linkedin">
                 <ion-icon name="logo-linkedin"></ion-icon>
-                @seunome
+                @leopoglia
             </p>
         </footer>
     );
