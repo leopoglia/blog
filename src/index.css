@@ -245,11 +245,6 @@ footer .linkedin:hover {
     height: auto;
   }
 
-  footer {
-    display: grid;
-    justify-content: center;
-  }
-
   footer p {
     margin-bottom: 10px;
   }
@@ -257,5 +252,17 @@ footer .linkedin:hover {
   .App,
   .Blog {
     width: 85% !important;
+  }
+}
+
+@media(max-width: 550px){
+  footer{
+    display: block;
+    text-align: center;
+  }
+
+  footer p{
+    display: inline-flex;
+    margin-right: 10px;
   }
 }
