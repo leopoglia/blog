@@ -92,6 +92,14 @@ main p {
   text-align: justify;
 }
 
+main h3{
+  margin-top: 30px;
+}
+
+main a img{
+  margin-right: 10px;
+}
+
 .post {
   display: flex;
   justify-content: space-between;
@@ -193,7 +201,7 @@ footer ion-icon {
   margin-right: 5px;
 }
 
-footer p {
+footer a {
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -245,7 +253,7 @@ footer .linkedin:hover {
     height: auto;
   }
 
-  footer p {
+  footer a {
     margin-bottom: 10px;
   }
 
@@ -261,7 +269,7 @@ footer .linkedin:hover {
     text-align: center;
   }
 
-  footer p{
+  footer a{
     display: inline-flex;
     margin-right: 10px;
   }

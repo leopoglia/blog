@@ -1,4 +1,4 @@
-import '../index.css';
+import '../../index.css';
 
 export default function Posts() {
     return (
@@ -10,9 +10,9 @@ export default function Posts() {
                     <p>leocpx</p>
                 </div>
 
-                <div className='titulo'>Por que Dall-E não vai roubar meu emprego</div>
+                <div className='titulo'>Titulo</div>
                 <div className='descricao'>
-                    Finalmente consegui experimentar. E posso garantir que é impossível criar imagens profissionais e úteis a partir de uma
+                    Texto
                 </div>
 
                 <div className='informacoes'>

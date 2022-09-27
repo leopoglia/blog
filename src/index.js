@@ -1,16 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import './index.css';
-import App from './components/App';
-import Blog from './components/Blog'
+import App from './components/App/App';
+import Blog from './components/Blog/Blog'
 import reportWebVitals from './reportWebVitals';
-import Post from './components/Post';
+import Post from './components/Blog/Post';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
