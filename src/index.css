@@ -51,7 +51,8 @@ code {
 }
 
 .App,
-.Blog {
+.Blog,
+.Sobre {
   color: var(--p);
   margin: 80px 0;
   width: 55%;
@@ -69,6 +70,20 @@ header,
 header label {
   display: flex;
   align-items: center;
+}
+
+header section {
+  display: flex;
+  align-items: center;
+}
+
+header .link {
+  margin-left: 15px;
+}
+
+header #moon {
+  margin-left: 15px;
+  cursor: pointer;
 }
 
 header label,
@@ -92,12 +107,24 @@ main p {
   text-align: justify;
 }
 
-main h3{
+main h3 {
   margin-top: 30px;
 }
 
-main a img{
+main a img {
   margin-right: 10px;
+}
+
+.App h2{
+  margin-top: 100px;
+  font-size: 35px;
+  margin-bottom: 0px;
+}
+
+.App h3{
+  margin-top: 10px;
+  font-weight: 400;
+  color: var(--q);
 }
 
 .post {
@@ -107,10 +134,6 @@ main a img{
   border-radius: 10px;
   cursor: pointer;
   margin-bottom: 10px;
-}
-
-.post:hover {
-  background-color: var(--t);
 }
 
 .post .texto {
@@ -170,11 +193,11 @@ main a img{
   font-size: 18px;
 }
 
-.post .acoes ion-icon:nth-child(1):hover{
+.post .acoes ion-icon:nth-child(1):hover {
   color: #e11e0e !important;
 }
 
-.post .acoes ion-icon:nth-child(2):hover{
+.post .acoes ion-icon:nth-child(2):hover {
   color: #cf872e !important;
 }
 
@@ -205,6 +228,18 @@ footer a {
   cursor: pointer;
   display: flex;
   align-items: center;
+}
+
+footer .copy{
+  font-size: 12px;
+}
+
+footer div{
+  display: flex;
+}
+
+footer div a{
+  margin-right: 10px;
 }
 
 footer .twitter:hover {
@@ -238,7 +273,7 @@ footer .linkedin:hover {
 @media(max-width: 850px) {
 
   .post {
-    display: grid;
+    display: block;
   }
 
   .post .texto {
@@ -258,19 +293,8 @@ footer .linkedin:hover {
   }
 
   .App,
-  .Blog {
+  .Blog,
+  .Sobre {
     width: 85% !important;
-  }
-}
-
-@media(max-width: 550px){
-  footer{
-    display: block;
-    text-align: center;
-  }
-
-  footer a{
-    display: inline-flex;
-    margin-right: 10px;
   }
 }

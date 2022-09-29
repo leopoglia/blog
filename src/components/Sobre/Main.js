@@ -1,6 +1,6 @@
 import '../../index.css';
 
-export default function Main(props) {
+export default function Main() {
     return (
         <main>
             <p className='about'>

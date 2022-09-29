@@ -17,7 +17,7 @@ export default function Posts() {
 
                 <div className='informacoes'>
                     <div>
-                        <div className='data'>24 de agosto</div>
+                        <div className='data'>24 de agosto, 2022</div>
                         <div className='classificacao'>• Java</div>
                     </div>
 

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export default function App() {
     return (
         <div className="Blog">
-            <Header titulo="Blog" link="Inicio"></Header>
+            <Header titulo="Blog"></Header>
             <Link to="/post">
                 <Post></Post>
             </Link>
