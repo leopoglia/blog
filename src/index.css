@@ -8,19 +8,20 @@ body {
 }
 
 * {
+  color: var(--p) !important;
   user-select: none;
 }
 
 :root {
   --p: #1a202c;
-  --s: #e2e8f0;
+  --s: #d3d3d3;
   --t: #eeeeeeee;
   --q: #757575;
   --b: #fff;
 }
 
 .darkmode:root {
-  --p: #e2e8f0;
+  --p: #cecece;
   --s: #262626;
   --q: #757575;
   --b: #161616;
@@ -33,11 +34,11 @@ body {
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--s);
+  background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--p);
+  background-color: var(--s);
   border-radius: 10px;
 }
 
