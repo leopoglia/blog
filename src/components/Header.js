@@ -6,14 +6,26 @@ export default function Header(props) {
 
     const [moon, setMoon] = useState(<ion-icon id="moon" name="moon" onClick={() => darkMode()}></ion-icon>);
 
+
+    useEffect(() => {
+
+        if (localStorage.getItem("darkmode") === "activated") {
+            setMoon(<ion-icon id="moon" name="ellipse" onClick={() => darkMode(false)}></ion-icon>)
+            localStorage.setItem("darkmode", "activated")
+        }
+    }, []);
+
     function darkMode(val) {
-        if (val) {
+        if (localStorage.getItem("darkmode") === "activated") {
             setMoon(<ion-icon id="moon" name="moon" onClick={() => darkMode(false)}></ion-icon>)
+            localStorage.setItem("darkmode", "disabled")
         } else {
             setMoon(<ion-icon id="moon" name="ellipse" onClick={() => darkMode(true)}></ion-icon>)
+            localStorage.setItem("darkmode", "activated")
         }
-    }
 
+        document.querySelector('html').classList.toggle('darkmode');
+    }
 
     return (
         <header>

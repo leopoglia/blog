@@ -4,10 +4,11 @@ body {
   width: 100%;
   letter-spacing: -.02em;
   overflow-x: hidden;
+  background-color: var(--b);
 }
 
 * {
-  transition: 0.1s;
+  user-select: none;
 }
 
 :root {
@@ -15,7 +16,16 @@ body {
   --s: #e2e8f0;
   --t: #eeeeeeee;
   --q: #757575;
+  --b: #fff;
 }
+
+.darkmode:root {
+  --p: #e2e8f0;
+  --s: #262626;
+  --q: #757575;
+  --b: #161616;
+}
+
 
 *::-webkit-scrollbar {
   width: 5px;
@@ -99,7 +109,6 @@ header label:hover {
 }
 
 header .blog {
-  transition: 0.1s;
   cursor: pointer;
 }
 

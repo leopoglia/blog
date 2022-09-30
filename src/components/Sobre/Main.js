@@ -9,7 +9,7 @@ export default function Main() {
 
             <h3>📊 Github Stats</h3>
             <img src="https://raw.githubusercontent.com/leopoglia/leopoglia/5fcd472a66742ec4863efedb50076c147133b016/generated/overview.svg" alt="" />
-            <img src="https://raw.githubusercontent.com/leopoglia/leopoglia/ebdaf9a3eefcbf9cd3b41f0caf0094feb91afdff/generated/languages.svg" />
+            <img src="https://raw.githubusercontent.com/leopoglia/leopoglia/5fcd472a66742ec4863efedb50076c147133b016/generated/languages.svg" />
 
 
             <h3>🔨 Languages and Tools</h3>
