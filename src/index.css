@@ -8,7 +8,6 @@ body {
 }
 
 * {
-  color: var(--p) !important;
   user-select: none;
 }
 
@@ -253,19 +252,19 @@ footer div a{
 }
 
 footer .twitter:hover {
-  color: rgb(42, 169, 224);
+  color: #2aa9e0 !important;
 }
 
 footer .github:hover {
-  color: rgb(129, 34, 144);
+  color: rgb(129, 34, 144) !important;
 }
 
 footer .instagram:hover {
-  color: rgb(253, 8, 72);
+  color: rgb(253, 8, 72) !important;
 }
 
 footer .linkedin:hover {
-  color: rgb(2, 117, 180);
+  color: rgb(2, 117, 180) !important;
 }
 
 @media(max-width: 1200px) {
